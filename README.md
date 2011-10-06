@@ -1,4 +1,11 @@
 ## Cloudfoundry single-vm setup
+This repo is intended to manage a single vm cloudfoundry installation.
+
+The installation of cloudfoundry itself, is handled through a script (see install section below),
+we are eaiting for the release of oneric for the appearence of packages, before making a chef recipe.
+
+To reduce setup effort, we use the *.vcap.me domain, which points to localhost; and the vm redirects it's port 80 to the hosts 8080 port.
+Thus `vmc target api.vcap.me:8080` redirects to the vm.
 
 ### References
 * [VCAP github repo](https://github.com/cloudfoundry/vcap/)
